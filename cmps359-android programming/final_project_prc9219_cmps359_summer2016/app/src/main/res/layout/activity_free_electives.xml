@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.patrick.cmpsgraduation.free_electives">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/relativeLayout"
+        android:layout_below="@+id/free_electives_next"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FREE ELECTIVES (up to 4 credit hours)"
+            android:id="@+id/textView5"
+            android:layout_below="@+id/listView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:hint="course id"
+            android:layout_below="@+id/textView5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText3"
+            android:layout_alignBottom="@+id/editText"
+            android:layout_toRightOf="@+id/editText"
+            android:layout_toEndOf="@+id/editText"
+            android:hint="credits" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText4"
+            android:layout_alignBottom="@+id/editText3"
+            android:layout_toRightOf="@+id/editText3"
+            android:layout_toEndOf="@+id/editText3"
+            android:hint="grade received" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText5"
+            android:hint="course id"
+            android:layout_below="@+id/editText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText6"
+            android:hint="credits"
+            android:layout_alignTop="@+id/editText5"
+            android:layout_toLeftOf="@+id/editText4"
+            android:layout_toStartOf="@+id/editText4" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText7"
+            android:hint="grade received"
+            android:layout_alignTop="@+id/editText6"
+            android:layout_toRightOf="@+id/editText6"
+            android:layout_toEndOf="@+id/editText6" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText8"
+            android:hint="course id"
+            android:layout_below="@+id/editText5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText9"
+            android:hint="credits"
+            android:layout_below="@+id/editText6"
+            android:layout_toLeftOf="@+id/editText7"
+            android:layout_toStartOf="@+id/editText7" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText10"
+            android:hint="grade received"
+            android:layout_below="@+id/editText6"
+            android:layout_toRightOf="@+id/editText6"
+            android:layout_toEndOf="@+id/editText6" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Next - Math Prerequisites"
+        android:id="@+id/free_electives_next"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

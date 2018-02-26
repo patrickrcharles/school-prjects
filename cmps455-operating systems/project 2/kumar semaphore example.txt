@@ -1,0 +1,109 @@
+An example of a semaphore usage
+by Ashok Kumar - Thursday, 4 February 2016, 8:39 PM
+ 	
+We went over this or a similar example in the class. Here it is again for a refresher.
+
+Suppose there are 3 identical chairs in a room. There are 7 students who may try to enter the room to sit on a chair (one student in a chair at most). This is a synchronization problem where the students are concurrent threads and the chairs are the shared resources.
+
+To solve it, we will define a semaphore s and intialize it with a value of 3 (why?).
+
+semaphore s = 3;
+
+Each student thread will have its code like the following:
+
+thread t1
+
+....unshared code
+
+Wait (s);
+
+//sit in the chair :: note this is the critical section
+
+Signal(s);
+
+....unshared code
+
+_______________________
+
+thread t2
+
+....unshared code
+
+Wait (s);
+
+//sit in the chair :: note this is the critical section
+
+Signal(s);
+
+....unshared code
+
+__________________
+
+thread t3
+
+....unshared code
+
+Wait (s);
+
+//sit in the chair :: note this is the critical section
+
+Signal(s);
+
+....unshared code
+
+_____________________
+
+thread t4
+
+....unshared code
+
+Wait (s);
+
+//sit in the chair :: note this is the critical section
+
+Signal(s);
+
+....unshared code
+
+______________________
+
+thread t5
+
+....unshared code
+
+Wait (s);
+
+//sit in the chair :: note this is the critical section
+
+Signal(s);
+
+....unshared code
+
+_______________________
+
+thread t6
+
+....unshared code
+
+Wait (s);
+
+//sit in the chair :: note this is the critical section
+
+Signal(s);
+
+....unshared code
+
+__________________________
+
+thread t7
+
+....unshared code
+
+Wait (s);
+
+//sit in the chair :: note this is the critical section
+
+Signal(s);
+
+....unshared code
+

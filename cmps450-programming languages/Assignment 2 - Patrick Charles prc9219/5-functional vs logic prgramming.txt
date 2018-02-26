@@ -1,0 +1,10 @@
+
+The most obvious similarity in functional and logic programming is that the same algorithms still work, but the implementations are different. Also, the notion of variables is very different, but the notation and syntax are similar for practical purposes.
+
+In functional programming, a variable represents a value that doesnt have to be completely defined and only the parts that are defined are used in computations. In logic programming a variable doesn't have to be defined and can later be changed using rules and clauses. 
+
+In logic programming, each step is processed by checking predefined rules and facts. this gives free backtracking which is not exactly easy in functional programming.
+
+In researching the differences, the most helpful thing i found to understand the differences is that functional programming models reasoning (mathematical expressions) and logic programming models knowledge (facts database, clauses, predicate calculus, etc). Although it seems logic programming is kind of a form of functional programming.
+
+The maxmin program, for example, is the same basic algorithm with a max, min, and minmax functions/clauses, but implementation is different being that it's mathematical expressions vs clauses/rules. Mergesort program is also very similar in this respect in both programming styles.
